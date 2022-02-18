@@ -44,6 +44,10 @@
     letter-spacing: normal;
 }
 
+.nav-home, .nav-destination, .nav-crew, .nav-technology {
+    border-bottom: solid 3px transparent;
+}
+
 .nav-home:hover, .nav-destination:hover, .nav-crew:hover, .nav-technology:hover {
     border-bottom: solid 3px rgba(255, 255, 255, 0.5);
 }
