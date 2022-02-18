@@ -7,3 +7,46 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
+.space__home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 8rem;
+    padding: 0 10rem 8rem 10rem;
+}
+
+.space__home-content {
+    height: 382px;
+    width: 450px;
+    /* : 24rem; */
+}
+
+.space__home-content h5 {
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    line-height: 34px;
+}
+
+.space__home-content h1 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 150px;
+    line-height: 172px;
+    margin-top: 2.5rem;
+}
+
+.space__home-content p {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--color-purple);
+}
+
+.space__home-explore {
+    border: solid 1px white;
+}
+
