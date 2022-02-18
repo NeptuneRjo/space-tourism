@@ -46,6 +46,7 @@
 
 .space__navbar-nav p {
     letter-spacing: normal;
+    font-weight: bold;
 }
 
 .nav-home, .nav-destination, .nav-crew, .nav-technology {
