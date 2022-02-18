@@ -3,7 +3,7 @@ import './destination.css';
 
 const Destination = () => {
   return (
-    <div>Destination</div>
+    <div className="space__destination"></div>
   )
 }
 
