@@ -4,11 +4,11 @@
     justify-content: flex-end;
     width: 830px;
     height: 96px;
-    border: solid 1px black;
     position: absolute;
     right: 0;
     top: 2.5rem;
-    background: black;
+
+    background: rgba(255, 255, 255, 0.125);
 }
 
 .space__navbar-content {
@@ -19,9 +19,6 @@
     width: 100%;
     gap: 3rem;
     padding-right: 6rem;
-
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);
 }
 
 .space__navbar-nav {
@@ -43,6 +40,8 @@
     align-items: center;
     border-bottom: solid 3px transparent;
     letter-spacing: 2.7px;
+    filter: none;
+
 }
 
 .space__navbar-nav p {
