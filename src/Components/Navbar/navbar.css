@@ -33,5 +33,25 @@
     color: var(--color-white);
     text-decoration: none;
     font-family: var(--font-secondary);
-    font-size: 14px;
+    font-size: 16px;
+    height: 100%;
+    align-items: center;
+    border-bottom: solid 3px transparent;
+    letter-spacing: 2.7px;
+}
+
+.space__navbar-nav p {
+    letter-spacing: normal;
+}
+
+.nav-home:hover, .nav-destination:hover, .nav-crew:hover, .nav-technology:hover {
+    border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+}
+
+.selected__nav {
+    border-bottom: solid 3px var(--color-white);
+}
+
+.selected__nav:hover {
+    border-bottom: solid 3px var(--color-white);
 }
