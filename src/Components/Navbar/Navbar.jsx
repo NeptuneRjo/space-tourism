@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="space__navbar">
       <div className="space__navbar-content">
-        <div className="space__navbar-nav nav-home">
+        <div className="space__navbar-nav nav-home selected__nav">
           <Link to='/'><p>00</p>Home</Link>
         </div>
         <div className="space__navbar-nav nav-destination">
