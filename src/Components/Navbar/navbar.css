@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 830px;
+    height: 96px;
+    border: solid 1px black;
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
     background: black;
 }
 
@@ -9,9 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem;
-    width: 830px;
-    height: 96px;
+    height: 100%;
+    width: 100%;
     gap: 3rem;
     padding-right: 6rem;
 
