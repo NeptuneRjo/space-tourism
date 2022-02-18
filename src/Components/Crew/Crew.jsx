@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import handleNav from '../Navbar/handleNav';
 import './crew.css';
 
-export default class Crew extends Component {
-  render() {
-    return (
-      <div>Crew</div>
-    )
-  }
+const Crew = () => {
+
+  useEffect(() => {
+    handleNav(document.querySelector('.nav-crew'))
+  }, []);
+
+  return (
+    <div>Crew</div>
+  )
 }
+
+export default Crew
