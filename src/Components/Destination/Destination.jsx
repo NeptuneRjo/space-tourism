@@ -20,8 +20,6 @@ const Destination = () => {
     }
 
     selectedDestination.classList.add('selected-nav')
-    // console.log(selectedDestination)
-    // console.log(navs)
   }
 
   useEffect(() => {
