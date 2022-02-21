@@ -64,3 +64,26 @@
 .selected__nav:hover {
     border-bottom: solid 3px var(--color-white);
 }
+
+@media screen and (max-width: 1050px) {
+    .space__navbar {
+        width: 450px;
+        top: 0;
+    }
+
+    .space__navbar-content {
+        gap: 2.3rem;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .space__navbar-nav p {
+        display: none;
+    }
+
+    .space__navbar-nav a {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+    }
+}
