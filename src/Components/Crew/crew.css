@@ -95,3 +95,90 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 1150px) {
+    .crew-header {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+
+
+        margin: 0;
+        padding: 8.5rem 0 3.75rem 2.5rem; 
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .crew-header p {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .crew-role {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        margin: 0;
+
+    }
+
+    .crew-name {
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .crew-description {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .crew-nav {
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+
+    .crew-nav-member {
+        height: 10px;
+        width: 10px;
+    }
+
+    .crew-main {
+        height: 100vh;
+        width: 100%;
+        background: url('/src/Assets/crew/background-crew-tablet.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crew-content {
+        width: 100%;
+        margin: 0;
+
+        align-items: center;
+    }
+
+    .crew-image {
+        display: flex;
+        justify-content: center;
+        height: 85%;
+        overflow: hidden;
+    }
+
+}
+
