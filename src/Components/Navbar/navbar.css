@@ -73,6 +73,7 @@
     .space__navbar {
         width: 450px;
         top: 0;
+        right: 0px;
     }
 
     .space__navbar-content {
