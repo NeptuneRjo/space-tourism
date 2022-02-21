@@ -192,7 +192,12 @@
         font-weight: normal;
         font-size: 16px;
         text-align: center;
-        width: 100%;
+        width: 60ch;
+        padding-bottom: 49px;
+    }
+
+    .destination-distance, .destination-time {
+        width: 216px;
     }
 
     .destination-distance div, .destination-time div {
@@ -202,6 +207,7 @@
         text-align: center;
         letter-spacing: 2.3625px;
         text-transform: uppercase;
+        width: 100%;
     }
 
     .destination-distance p, .destination-time p  {
