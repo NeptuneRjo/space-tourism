@@ -218,3 +218,9 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .destination-main {
+        background: url('/src/Assets/destination/background-destination-tablet.jpg') no-repeat center center fixed; 
+    }
+}
