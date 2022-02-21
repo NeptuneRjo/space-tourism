@@ -17,8 +17,8 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 8rem;
-    padding: 0 10.3rem 8rem 10.3rem;
-
+    width: 100%;
+    margin: 0 10.3rem 8rem 10.3rem;
 }
 
 .space__home-content {
@@ -71,18 +71,18 @@
     box-shadow: 0px 0px 0px 88px rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
     .space__home-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         padding-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 
     .space__home-content {
         text-align: center;
-        margin-bottom: 5rem;
     }
 
     .space__home-content h5 {
