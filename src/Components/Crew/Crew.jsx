@@ -29,7 +29,7 @@ const Crew = () => {
   return (
     <div className="crew-main">
       <div className="crew-content">
-        <h5 className="crew-header"><p>02</p>MEET YOUR CREW</h5>
+        <div className="crew-header"><p>02</p>MEET YOUR CREW</div>
         <h4 className="crew-role">{crew[index].role}</h4>
         <h3 className="crew-name">{crew[index].name}</h3>
         <div className="crew-description">{crew[index].bio}</div>
