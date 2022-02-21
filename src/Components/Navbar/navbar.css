@@ -65,7 +65,11 @@
     border-bottom: solid 3px var(--color-white);
 }
 
-@media screen and (max-width: 1050px) {
+.space__navbar-content-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
     .space__navbar {
         width: 450px;
         top: 0;
@@ -86,4 +90,30 @@
         line-height: 17px;
         letter-spacing: 2.3625px;
     }
+}
+
+@media screen and (max-width: 550px) {
+    .space__navbar-content {
+        display: none;
+    }
+
+    .space__navbar-content-menu {
+        display: flex;
+        padding-right: 1.5rem;
+        margin: 2rem 1.5rem 0 0;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .space__navbar-content-menu .slide-out {
+        border: solid 1px white;
+        height: 100vh;
+        position: absolute;
+        width: 255px;
+    }
+
+    .space__navbar-nav p {
+        display: block;
+    }
+
 }
