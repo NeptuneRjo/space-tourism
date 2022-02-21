@@ -131,8 +131,10 @@
         line-height: 24px;
         letter-spacing: 3.375px;
         text-transform: uppercase;
-        padding-left: 2.4rem;
-        margin-bottom: 3.75rem;
+        height: 100%;
+        padding: 8.5rem 0 0 2.4rem;
+        margin: 0;
+        gap: 19px;
     }
 
     .destination-header p {
