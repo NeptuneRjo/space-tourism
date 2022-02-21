@@ -115,7 +115,19 @@
 .technology-image {
     width: 515px;
     height: 517px;
-    border: solid 1px white;
     margin-top: 17rem;
 }
+
+.launchVehicle {
+    background: url('/src/Assets/technology/image-launch-vehicle-portrait.jpg')
+}
+
+.spacePort {
+    background: url('/src/Assets/technology/image-spaceport-portrait.jpg')
+}
+
+.spaceCapsule {
+    background: url('/src/Assets/technology/image-space-capsule-portrait.jpg');
+}
+
 
