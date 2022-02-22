@@ -9,87 +9,107 @@
     color: white;
 
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10.5rem;
+    padding-right: 5.5rem;
+}
+
+.crew-header {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 9.625rem;
+}
+
+.crew-header p {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    opacity: .25;
+}
+
+.crew-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 13.25rem;
 }
 
 .crew-content {
     display: flex;
     flex-direction: column;
-    margin-left: 10.3rem;
+    justify-content: flex-start;
     height: 100%;
-    justify-content: space-between;
-    border: solid 1px red;
-}
-
-.crew-header {
-    display: flex;
-    gap: 1.5rem;
-    font-family: var(--font-secondary);
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 34px;
-    letter-spacing: 4.725px;
-    text-transform: uppercase;
-    margin-top: 13.25rem;
-    width: 100%;
-}
-
-.crew-header p {
-    opacity: 0.25;
-    font-weight: bold;
 }
 
 .crew-role {
     font-family: var(--font-main);
+    font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 37px;
     text-transform: uppercase;
-    opacity: .5;
-    margin-top: 9.6rem;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 15px;
+    height: 37px;
 }
 
 .crew-name {
     font-family: var(--font-main);
+    font-style: normal;
     font-weight: normal;
     font-size: 56px;
     line-height: 64px;
     text-transform: uppercase;
-    margin-top: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+    height: 64px;
 }
 
 .crew-description {
     font-family: var(--font-secondary);
-    font-size: 18px;
+    font-style: normal;
     font-weight: normal;
+    font-size: 18px;
     line-height: 32px;
-    color: var(--color-purple);
-    margin-top: 1.7rem;
+    color: #D0D6F9;
     width: 444px;
+    margin-bottom: 6.5rem;
+    height: 140px;
 }
 
 .crew-nav {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 6rem;
+    gap: 24px;
 }
 
 .crew-nav-member {
+    background: rgba(255, 255, 255, 0.17);
     height: 15px;
     width: 15px;
-    background-color: rgba(255, 255, 255, 0.17);
-    border-radius: 100%;
     cursor: pointer;
+    border-radius: 100%;
 }
 
 .crew-nav-member:hover {
+    color: white;
     opacity: .5;
 }
 
 .selected-member {
-    background-color: white;
+    background: white;
     opacity: 1;
 }
 
@@ -97,90 +117,23 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1150px) {
-    .crew-header {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 3.375px;
-        text-transform: uppercase;
+.crew-image {
+    display: flex;
+    align-items: flex-end;
+}
 
+.crew-image img {
+    overflow: hidden;
+}
 
-        margin: 0;
-        padding: 8.5rem 0 3.75rem 2.5rem; 
-        width: 100%;
-        gap: 1rem;
-    }
-
-    .crew-header p {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 3.375px;
-    }
-
-    .crew-role {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 3.375px;
-        margin: 0;
-
-    }
-
+@media screen and (max-width: 1375px) {
     .crew-name {
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 46px;
-        text-align: center;
-        text-transform: uppercase;
+        height: 95px;
+        margin-bottom: 45px;
+        width: 12ch;
     }
 
     .crew-description {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 28px;
-        text-align: center;
-        margin-bottom: 2.5rem;
-
+        margin-bottom: 4.5rem;
     }
-
-    .crew-nav {
-        gap: 1rem;
-        margin-bottom: 0;
-    }
-
-    .crew-nav-member {
-        height: 10px;
-        width: 10px;
-    }
-
-    .crew-main {
-        height: 100vh;
-        width: 100%;
-        background: url('/src/Assets/crew/background-crew-tablet.jpg') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .crew-content {
-        width: 100%;
-        margin: 0;
-
-        align-items: center;
-    }
-
-    .crew-image {
-        display: flex;
-        justify-content: center;
-        height: 85%;
-        overflow: hidden;
-    }
-
 }
-
