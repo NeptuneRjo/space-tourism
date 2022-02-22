@@ -137,3 +137,88 @@
         margin-bottom: 4.5rem;
     }
 }
+
+@media screen and (max-width: 1150px) {
+    .crew-main {
+        padding: 0;
+    }
+
+    .crew-container { 
+        flex-direction: column;
+        /* justify-content: center; */
+        margin: 0;
+        padding-top: 0;
+
+        /* border: solid 1px red; */
+    }
+
+    .crew-content {
+        /* border: solid 1px red; */
+        margin: 0;
+        align-items: center;
+    }
+
+    .crew-header {
+        padding-left: 38.5px;
+        padding-top: 8.5rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+        gap: 16px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .crew-header p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .crew-role {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 8px;;
+    }
+
+    .crew-name {
+        width: auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .crew-description { 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        height: 84px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .crew-image {
+        justify-content: center;
+        align-items: center;
+        height: 46%;
+    }
+
+    .crew-image img {
+        height: 100%;
+    }
+}
