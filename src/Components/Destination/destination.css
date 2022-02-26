@@ -155,7 +155,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .destination-header {
         font-size: 20px;
         line-height: 24px;
@@ -176,6 +176,10 @@
         height: 300px;
         width: 300px;
     }
+
+    /* .destination-container { 
+        height: 100%;
+    } */
 
     .destination-nav {
         gap: 2.1rem;
@@ -210,6 +214,7 @@
         width: 573px;
         flex-direction: row;
         gap: 11px;
+        margin-bottom: 3.875rem;
     }
 
     .destination-distance {
