@@ -31,7 +31,9 @@ const Technology = () => {
     <div className="technology-main">
       <div className="technology-header"><p>03</p>SPACE LAUNCH 101</div>
       <div className="technology-container">
-        <div className={'technology-image ' + imageClass}></div>
+        <div className='technology-image'>
+          <img className={imageClass} />
+        </div>
         <div className="technology-content">
           <div className="technology-nav">
             <div className="technology-nav-item nav1" 
