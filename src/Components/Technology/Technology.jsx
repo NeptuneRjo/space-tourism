@@ -29,8 +29,9 @@ const Technology = () => {
 
   return (
     <div className="technology-main">
+      <div className="technology-header"><p>03</p>SPACE LAUNCH 101</div>
       <div className="technology-container">
-        <h5 className="technology-header"><p>03</p>SPACE LAUNCH 101</h5>
+        <div className={'technology-image ' + imageClass}></div>
         <div className="technology-content">
           <div className="technology-nav">
             <div className="technology-nav-item nav1" 
@@ -59,7 +60,6 @@ const Technology = () => {
           </div>
         </div>
       </div>
-      <div className={'technology-image ' + imageClass}></div>
     </div>
   )
 }
