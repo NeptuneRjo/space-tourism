@@ -1,61 +1,75 @@
 .destination-main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: url('/src/Assets/destination/background-destination-desktop.jpg') no-repeat center center fixed; 
+    background: url('/src/Assets/destination/background-destination-mobile.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    font-family: var(--font-main);
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 7rem;
 }
 
 .destination-header {
     font-family: var(--font-secondary);
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
 
     display: flex;
-    gap: 1.75rem;
-    padding-left: 10.3rem;
-    margin-bottom: 6rem;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 5.5rem;
+    margin-bottom: 2rem;
 }
 
 .destination-header p {
-    font-size: 28px;
+    /* font-size: 28px; */
     font-weight: bold;
-    line-height: 34px;
+    /* line-height: 34px; */
     opacity: .25;
 }
 
 .destination-container {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    gap: 10rem;
+    flex-direction: column;
+}
 
+.destination-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1.625rem;
+}
+
+.destination-image img {
+    height: 170px;
+    width: 170px;
 }
 
 .destination-content {
-    width: 445px;
-    height: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .destination-nav {
     display: flex;
-    gap: 2.2rem;
     font-family: var(--font-secondary);
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
-    height: 34px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    height: 28px;
+    gap: 1.625rem;
+    margin-bottom: 1.25rem;
 }
 
 .destination-nav-item {
@@ -72,35 +86,39 @@
 }
 
 .destination-title {
-    font-family: var(--font-main);
     text-transform: uppercase;
-    font-size: 100px;
-    line-height: 115px;
-    margin-top: 2.3rem;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
     font-weight: normal;
-}
-
-.destination-text {
-    display: flex;
-    border-bottom: solid 1px #383B4B;
-    margin-bottom: 1.75rem;
 }
 
 .destination-text p{
     font-family: var(--font-secondary);
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
     color: var(--color-purple);
     width: 44ch;
-    padding-bottom: 54px;
+    margin-bottom: 2rem;
 }
 
 .destination-stats {
     display: flex;
-    gap: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    border-top: solid 1px #383B4B;
+    padding-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 3.625rem;
 }
 
 .destination-distance div, .destination-time div {
+    text-align: center;
+    margin-bottom: 12px;
+
     font-family: var(--font-secondary);
     font-weight: normal;
     font-size: 14px;
@@ -108,18 +126,18 @@
     letter-spacing: 2.3625px;
     text-transform: uppercase;
     color: var(--color-purple);
-    margin-bottom: .75rem;
 }
 
 .destination-distance p, .destination-time p {
-    font-family: var(--font-main);
+    /* font-family: var(--font-main); */
     font-weight: normal;
     font-size: 28px;
     line-height: 32px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
     .destination-main {
         flex-direction: column;
         padding-bottom: 0;
@@ -223,4 +241,4 @@
     .destination-main {
         background: url('/src/Assets/destination/background-destination-tablet.jpg') no-repeat center center fixed; 
     }
-}
+} */
