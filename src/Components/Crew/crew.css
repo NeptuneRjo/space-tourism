@@ -52,8 +52,6 @@
 }
 
 .crew-image img {
-    /* height: 223px;
-    width: 327px; */
     height: 222px;
 }
 
@@ -77,7 +75,6 @@
     background: rgba(255, 255, 255, 0.17);
     height: 10px;
     width: 10px;
-    /* gap: 1rem; */
     cursor: pointer;
     border-radius: 100%;
 }
@@ -88,10 +85,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
     mix-blend-mode: normal;
     opacity: 0.5;
-    /* height: 37px; */
     text-align: center;
     margin-bottom: 8px;
 }
@@ -105,7 +100,6 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 1rem;
-    /* height: 64px; */
 }
 
 .crew-description {
@@ -118,8 +112,6 @@
     text-align: center;
     width: 38ch;
     margin-bottom: 6.5rem;
-    /* width: 444px;
-    height: 140px; */
 }
 
 
