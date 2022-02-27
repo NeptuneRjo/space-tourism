@@ -221,6 +221,16 @@
 }
 
 @media screen and (min-width: 1080px) {
+    .destination-main {
+        background: url('/src/Assets/destination/background-destination-desktop.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .destination-header {
         font-size: 28px;
         line-height: 34px;
