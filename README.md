@@ -8,11 +8,11 @@ Access my site at [Demo Link](https://neptunerjo.github.io/space-tourism/)
 
 ## Table of Content: 
 
-[About The App](#about-the-app)
-[Screenshots](#screenshots)
-[Technologies](#technologies)
-[Setup](#setup)
-[Approach](#approach)
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
 
 ## About the App
 
