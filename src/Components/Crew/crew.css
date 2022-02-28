@@ -120,6 +120,7 @@
   color: var(--color-purple);
   text-align: center;
   width: 38ch;
+  height: 150px;
 }
 
 .crew-nav-member:hover {
