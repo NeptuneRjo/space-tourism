@@ -1,5 +1,5 @@
 .crew-main {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     background: url('/src/Assets/crew/background-crew-mobile.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 223px;
+    height: 222px;
     width: 327px;
 
     border-bottom: solid 1px #383b4b;
@@ -204,3 +204,89 @@
     }
 }
 
+@media screen and (min-width: 1080px) {
+    .crew-main {
+        background: url('/src/Assets/crew/background-crew-desktop.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .crew-header {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        gap: 1.75rem;
+
+        margin: 13.25rem 0 6rem 10.5rem;
+    }
+
+    .crew-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .crew-image {
+        border: transparent;
+        margin: 0;
+        margin-right: 8.5rem;
+        justify-content: center;
+
+    }
+
+    .crew-image img {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        margin-right: 8.5rem;
+    }
+
+    .crew-content {
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 10.3rem;
+        margin-bottom: 0;
+    }
+
+    .crew-info {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .crew-role {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .crew-name {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .crew-description {
+        height: 160px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+        margin-bottom: 7.5rem;
+        width: 42ch;
+    }
+
+    .crew-nav {
+        margin-bottom: 5.85rem;
+        gap: 1.5rem;
+    }
+
+    .crew-nav-member {
+        height: 15px;
+        width: 15px;
+    }
+}
