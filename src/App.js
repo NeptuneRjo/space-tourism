@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <div className="space__app-content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/home">
               <Home />
             </Route>
             <Route path="/destination">

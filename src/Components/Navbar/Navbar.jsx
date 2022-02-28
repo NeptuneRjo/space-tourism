@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="space__navbar">
       <div className="space__navbar-content">
         <div className="space__navbar-nav nav-home">
-          <Link to="/">
+          <Link to="/home">
             <p>00</p>Home
           </Link>
         </div>
