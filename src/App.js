@@ -1,6 +1,13 @@
-import './App.css';
-import { Crew, Destination, Home, Navbar, Technology, Notfound } from './Components';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import "./App.css";
+import {
+  Crew,
+  Destination,
+  Home,
+  Navbar,
+  Technology,
+  Notfound,
+} from "./Components";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -9,19 +16,19 @@ function App() {
         <Navbar />
         <div className="space__app-content">
           <Switch>
-            <Route exact path='/'>
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path='/destination'>
+            <Route path="/destination">
               <Destination />
             </Route>
-            <Route path='/crew'>
+            <Route path="/crew">
               <Crew />
             </Route>
-            <Route path='/technology'>
+            <Route path="/technology">
               <Technology />
             </Route>
-            <Route path='*'>
+            <Route path="*">
               <Notfound />
             </Route>
           </Switch>
