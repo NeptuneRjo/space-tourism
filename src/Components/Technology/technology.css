@@ -254,7 +254,7 @@
     letter-spacing: 4.725px;
     gap: 1.75rem;
 
-    margin: 13.25rem 0 6rem 10.5rem;
+    margin: 13.25rem 0 0rem 10.5rem;
   }
 
   .technology-container {
@@ -273,6 +273,7 @@
     flex-direction: row;
     margin-left: 10.3rem;
     height: 305px;
+    margin-top: 6rem;
   }
 
   .technology-nav {
