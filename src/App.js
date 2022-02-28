@@ -16,16 +16,16 @@ function App() {
         <Navbar />
         <div className="space__app-content">
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/space-tourism/">
               <Home />
             </Route>
-            <Route path="/destination">
+            <Route path="/space-tourism/destination">
               <Destination />
             </Route>
-            <Route path="/crew">
+            <Route path="/space-tourism/crew">
               <Crew />
             </Route>
-            <Route path="/technology">
+            <Route path="/space-tourism/technology">
               <Technology />
             </Route>
             <Route path="*">
