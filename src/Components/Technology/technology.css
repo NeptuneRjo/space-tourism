@@ -1,5 +1,5 @@
 .technology-main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url('/src/Assets/technology/background-technology-mobile.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -47,6 +47,8 @@
     height: 170px;
     margin-right: 0;
     margin-bottom: 2.125rem;
+    display: flex;
+    justify-content: center;
 }
 
 .technology-image img {
@@ -182,7 +184,6 @@
 
     .technology-image {
         height: 310px;
-        /* width: 768px; */
         margin-bottom: 3.5rem;
     }
 
@@ -218,3 +219,106 @@
     }
 }
 
+
+@media screen and (min-width: 1080px) {
+    .technology-main {
+        background: url('/src/Assets/technology/background-technology-desktop.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .launchVehicle {
+        content: url('/src/Assets/technology/image-launch-vehicle-portrait.jpg');
+    }   
+    
+    .spacePort {
+        content: url('/src/Assets/technology/image-spaceport-portrait.jpg');
+    }
+    
+    .spaceCapsule {
+        content: 
+            url('/src/Assets/technology/image-space-capsule-portrait.jpg');
+    }
+
+    .technology-image img {
+        height: 527px;
+        width: 515px;
+    }
+
+    .technology-header {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        gap: 1.75rem;
+
+        margin: 13.25rem 0 6rem 10.5rem;
+    }
+
+    .technology-container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .technology-image {
+        width: 515px;
+        height: 527px;
+        margin: 0;
+    }
+
+    .technology-content {
+        flex-direction: row;
+        margin-left: 10.3rem;
+        height: 305px;
+    }
+
+    .technology-nav {
+        flex-direction: column;
+        margin-right: 5.5rem;
+    }
+
+    .technology-nav-item {
+        height: 80px;
+        width: 80px;
+
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .technology-info {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .technology-subheader {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+    
+    .technology-title {
+        height: 64px;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .technology-description {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+        width: 43.5ch;
+        height: 192px;
+        margin: 0;
+    }
+}
