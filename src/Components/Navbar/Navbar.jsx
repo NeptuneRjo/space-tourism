@@ -10,22 +10,22 @@ const Navbar = () => {
     <div className="space__navbar">
       <div className="space__navbar-content">
         <div className="space__navbar-nav nav-home">
-          <Link to="/space-tourism/">
+          <Link to="/">
             <p>00</p>Home
           </Link>
         </div>
         <div className="space__navbar-nav nav-destination">
-          <Link to="/space-tourism/destination">
+          <Link to="/destination">
             <p>01</p>Destination
           </Link>
         </div>
         <div className="space__navbar-nav nav-crew">
-          <Link to="/space-tourism/crew">
+          <Link to="/crew">
             <p>02</p>Crew
           </Link>
         </div>
         <div className="space__navbar-nav nav-technology">
-          <Link to="/space-tourism/technology">
+          <Link to="/technology">
             <p>03</p>Technology
           </Link>
         </div>
