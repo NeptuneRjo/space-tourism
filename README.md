@@ -42,6 +42,5 @@ Built using `html`, `css`, `React`, `Figma`, and `Prettier`.
 
 This project is mainly for experimenting with different techniques and developing my React skills...
 
--The home page roughly uses `BEM` naming conventions for class names, but everything else uses standard css conventions.
-
--I gained a lot of experience with React, particularly with the in-page content navigation. Functional Components and `useState` make dynamic easy.
+- The home page roughly uses `BEM` naming conventions for class names, but everything else uses standard css conventions.
+- I gained a lot of experience with React, particularly with the in-page content navigation. Functional Components and `useState` make dynamic easy.
