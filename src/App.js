@@ -17,18 +17,10 @@ function App() {
           <div className="space__app-content">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/destination">
-                <Destination />
-              </Route>
-              <Route path="/crew">
-                <Crew />
-              </Route>
-              <Route path="/technology">
-                <Technology />
-              </Route>
-              <Route path="*">
-                <Notfound />
-              </Route>
+              <Route path='/destination' component={Destination} />
+              <Route path='/crew' component={Crew} />
+              <Route path='/technology' component={Technology} />
+              <Route path='*' component={Notfound} />
             </Switch>
           </div>
       </div>
