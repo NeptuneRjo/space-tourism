@@ -3,26 +3,28 @@ import handleNav from "../Navbar/handleNav";
 import "./technology.css";
 import data from "../../data.json";
 
-const Technology = () => {
+const Technology = ({ handleClick }) => {
   const technology = data.technology;
+
+  const items = document.getElementsByClassName('technology-nav-item')
 
   const [index, setIndex] = useState(0);
   const [imageClass, setImageClass] = useState("launchVehicle");
 
-  const handleClick = (currentTech) => {
-    const navs = document.querySelectorAll(".technology-nav-item");
-    const image = document.querySelector(".technology-image");
+  // const handleClick = (currentTech) => {
+  //   const navs = document.querySelectorAll(".technology-nav-item");
+  //   const image = document.querySelector(".technology-image");
 
-    for (let i = 0; i < navs.length; i++) {
-      navs[i].classList.remove("selected-tech");
-    }
+  //   for (let i = 0; i < navs.length; i++) {
+  //     navs[i].classList.remove("selected-tech");
+  //   }
 
-    currentTech.classList.add("selected-tech");
-  };
+  //   currentTech.classList.add("selected-tech");
+  // };
 
   useEffect(() => {
     handleNav(document.querySelector(".nav-technology"));
-    handleClick(document.querySelector(".nav1"));
+    handleClick(items, 'selected-tech', document.querySelector(".nav1"));
   }, []);
 
   return (
@@ -39,7 +41,7 @@ const Technology = () => {
             <div
               className="technology-nav-item nav1"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-tech', e.target);
                 setIndex(0);
                 setImageClass("launchVehicle");
               }}
@@ -49,7 +51,7 @@ const Technology = () => {
             <div
               className="technology-nav-item nav2"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-tech', e.target);
                 setIndex(1);
                 setImageClass("spacePort");
               }}
@@ -59,7 +61,7 @@ const Technology = () => {
             <div
               className="technology-nav-item nav3"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-tech', e.target);
                 setIndex(2);
                 setImageClass("spaceCapsule");
               }}
