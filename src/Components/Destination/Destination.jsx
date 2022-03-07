@@ -12,7 +12,7 @@ import {
 const Destination = ({ handleClick }) => {
   const destination = data.destinations;
 
-  const items = document.querySelectorAll(".destination-nav-item");
+  const items = document.getElementsByClassName("destination-nav-item");
 
   const [index, setIndex] = useState(0);
   const [image, setImage] = useState(moonImage);
