@@ -9,25 +9,19 @@ import {
   europaImage,
 } from "../../Assets/destination/index"; // Images
 
-const Destination = () => {
+const Destination = ({ handleClick }) => {
   const destination = data.destinations;
+
+  const items = document.querySelectorAll(".destination-nav-item");
 
   const [index, setIndex] = useState(0);
   const [image, setImage] = useState(moonImage);
 
-  const handleClick = (selectedDestination) => {
-    const navs = document.querySelectorAll(".destination-nav-item");
-
-    for (let i = 0; i < navs.length; i++) {
-      navs[i].classList.remove("selected-nav");
-    }
-
-    selectedDestination.classList.add("selected-nav");
-  };
-
   useEffect(() => {
     handleNav(document.querySelector(".nav-destination"));
-    handleClick(document.querySelector(".nav-moon"));
+    handleClick(
+      items, 'selected-nav', document.querySelector('.nav-moon')
+    );
   }, []);
 
   return (
@@ -44,7 +38,7 @@ const Destination = () => {
             <div
               className="destination-nav-item nav-moon"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-nav', e.target);
                 setIndex(0);
                 setImage(moonImage);
               }}
@@ -54,7 +48,7 @@ const Destination = () => {
             <div
               className="destination-nav-item nav-mars"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-nav', e.target);
                 setIndex(1);
                 setImage(marsImage);
               }}
@@ -64,7 +58,7 @@ const Destination = () => {
             <div
               className="destination-nav-item nav-europa"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-nav', e.target);
                 setIndex(2);
                 setImage(europaImage);
               }}
@@ -74,7 +68,7 @@ const Destination = () => {
             <div
               className="destination-nav-item nav-titan"
               onClick={(e) => {
-                handleClick(e.target);
+                handleClick(items, 'selected-nav', e.target);
                 setIndex(3);
                 setImage(titanImage);
               }}
