@@ -7,21 +7,38 @@ import {
   Technology,
   Notfound,
 } from "./Components";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+
+  const handleClick = (items, classToUse, selectedComponent) => {
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.remove(classToUse);
+    }
+
+    selectedComponent.classList.add(classToUse);
+  }
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar />
           <div className="space__app-content">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path='/destination' component={Destination} />
-              <Route path='/crew' component={Crew} />
-              <Route path='/technology' component={Technology} />
-              <Route path='*' component={Notfound} />
-            </Switch>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route 
+                path='/destination' 
+                element={<Destination />} 
+              />
+              <Route 
+                path='/crew' 
+                element={<Crew handleClick={handleClick} />} 
+              />
+              <Route 
+                path='/technology' 
+                element={<Technology handleClick={handleClick} />} />
+              <Route path='*' element={<Notfound />} />
+            </Routes>
           </div>
       </div>
     </ Router>
