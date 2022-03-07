@@ -12,8 +12,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
 
   const handleClick = (items, classToUse, selectedComponent) => {
+    console.log(items)
     for (let i = 0; i < items.length; i++) {
       items[i].classList.remove(classToUse);
+      console.log('removed', classToUse)
     }
 
     selectedComponent.classList.add(classToUse);
@@ -28,7 +30,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route 
                 path='/destination' 
-                element={<Destination />} 
+                element={<Destination handleClick={handleClick} />} 
               />
               <Route 
                 path='/crew' 
