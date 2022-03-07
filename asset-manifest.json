@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/space-tourism/static/css/main.6afdb291.css",
-    "main.js": "/space-tourism/static/js/main.91ef2d69.js",
+    "main.js": "/space-tourism/static/js/main.58d4deac.js",
     "static/media/image-launch-vehicle-landscape.jpg": "/space-tourism/static/media/image-launch-vehicle-landscape.3fb5bdf1db65f1389f8d.jpg",
     "static/media/image-victor-glover.png": "/space-tourism/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/space-tourism/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -28,10 +28,10 @@
     "static/media/background-destination-mobile.jpg": "/space-tourism/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/space-tourism/index.html",
     "main.6afdb291.css.map": "/space-tourism/static/css/main.6afdb291.css.map",
-    "main.91ef2d69.js.map": "/space-tourism/static/js/main.91ef2d69.js.map"
+    "main.58d4deac.js.map": "/space-tourism/static/js/main.58d4deac.js.map"
   },
   "entrypoints": [
     "static/css/main.6afdb291.css",
-    "static/js/main.91ef2d69.js"
+    "static/js/main.58d4deac.js"
   ]
 }
