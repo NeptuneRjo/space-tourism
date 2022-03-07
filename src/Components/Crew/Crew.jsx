@@ -4,30 +4,21 @@ import data from "../../data.json";
 import "./crew.css";
 import { hurley, ansari, shuttleworth, glover } from "../../Assets/crew/index";
 
-const Crew = () => {
+const Crew = ({ handleClick }) => {
   const crew = data.crew;
+
+  const items = document.getElementsByClassName("crew-nav-member");
 
   const [index, setIndex] = useState(0);
   const [image, setImage] = useState(hurley);
 
-  const handleCrew = (currentMember) => {
-    const members = document.querySelectorAll(".crew-nav-member");
-
-    for (let i = 0; i < members.length; i++) {
-      members[i].classList.remove("selected-member");
-    }
-
-    currentMember.classList.add("selected-member");
-  };
-
   useEffect(() => {
     handleNav(document.querySelector(".nav-crew"));
-    handleCrew(document.querySelector(".nav-hurley"));
-
-    // add a state so page refreshes on last member
-    // currentNav = currentMember.classList
-    // handleCrew(currentNav)
+    handleClick(
+      items, 'selected-member', document.querySelector('.nav-hurley')
+    );
   }, []);
+
 
   return (
     <div className="crew-main">
@@ -43,7 +34,7 @@ const Crew = () => {
             <div
               className="crew-nav-member nav-hurley"
               onClick={(e) => {
-                handleCrew(e.target);
+                handleClick(items, 'selected-member', e.target);
                 setIndex(0);
                 setImage(hurley);
               }}
@@ -51,7 +42,7 @@ const Crew = () => {
             <div
               className="crew-nav-member nav-shuttleworth"
               onClick={(e) => {
-                handleCrew(e.target);
+                handleClick(items, 'selected-member', e.target);
                 setIndex(1);
                 setImage(shuttleworth);
               }}
@@ -59,7 +50,7 @@ const Crew = () => {
             <div
               className="crew-nav-member nav-glover"
               onClick={(e) => {
-                handleCrew(e.target);
+                handleClick(items, 'selected-member', e.target);
                 setIndex(2);
                 setImage(glover);
               }}
@@ -67,7 +58,7 @@ const Crew = () => {
             <div
               className="crew-nav-member nav-ansari"
               onClick={(e) => {
-                handleCrew(e.target);
+                handleClick(items, 'selected-member', e.target);
                 setIndex(3);
                 setImage(ansari);
               }}
