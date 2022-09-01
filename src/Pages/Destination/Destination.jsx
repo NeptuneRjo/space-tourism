@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import handleNav from "../Navbar/handleNav";
+import { handleNav } from "../../Components";
 import data from "../../data.json";
 import "./destination.css";
 import {
@@ -19,9 +19,7 @@ const Destination = ({ handleClick }) => {
 
   useEffect(() => {
     handleNav(document.querySelector(".nav-destination"));
-    handleClick(
-      items, 'selected-nav', document.querySelector('.nav-moon')
-    );
+    handleClick(items, "selected-nav", document.querySelector(".nav-moon"));
   }, []);
 
   return (
@@ -38,7 +36,7 @@ const Destination = ({ handleClick }) => {
             <div
               className="destination-nav-item nav-moon"
               onClick={(e) => {
-                handleClick(items, 'selected-nav', e.target);
+                handleClick(items, "selected-nav", e.target);
                 setIndex(0);
                 setImage(moonImage);
               }}
@@ -48,7 +46,7 @@ const Destination = ({ handleClick }) => {
             <div
               className="destination-nav-item nav-mars"
               onClick={(e) => {
-                handleClick(items, 'selected-nav', e.target);
+                handleClick(items, "selected-nav", e.target);
                 setIndex(1);
                 setImage(marsImage);
               }}
@@ -58,7 +56,7 @@ const Destination = ({ handleClick }) => {
             <div
               className="destination-nav-item nav-europa"
               onClick={(e) => {
-                handleClick(items, 'selected-nav', e.target);
+                handleClick(items, "selected-nav", e.target);
                 setIndex(2);
                 setImage(europaImage);
               }}
@@ -68,7 +66,7 @@ const Destination = ({ handleClick }) => {
             <div
               className="destination-nav-item nav-titan"
               onClick={(e) => {
-                handleClick(items, 'selected-nav', e.target);
+                handleClick(items, "selected-nav", e.target);
                 setIndex(3);
                 setImage(titanImage);
               }}

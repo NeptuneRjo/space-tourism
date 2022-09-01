@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import handleNav from "../Navbar/handleNav";
+import { handleNav } from "../../Components";
 import "./technology.css";
 import data from "../../data.json";
 
 const Technology = ({ handleClick }) => {
   const technology = data.technology;
 
-  const items = document.getElementsByClassName('technology-nav-item')
+  const items = document.getElementsByClassName("technology-nav-item");
 
   const [index, setIndex] = useState(0);
   const [imageClass, setImageClass] = useState("launchVehicle");
@@ -24,7 +24,7 @@ const Technology = ({ handleClick }) => {
 
   useEffect(() => {
     handleNav(document.querySelector(".nav-technology"));
-    handleClick(items, 'selected-tech', document.querySelector(".nav1"));
+    handleClick(items, "selected-tech", document.querySelector(".nav1"));
   }, []);
 
   return (
@@ -41,7 +41,7 @@ const Technology = ({ handleClick }) => {
             <div
               className="technology-nav-item nav1"
               onClick={(e) => {
-                handleClick(items, 'selected-tech', e.target);
+                handleClick(items, "selected-tech", e.target);
                 setIndex(0);
                 setImageClass("launchVehicle");
               }}
@@ -51,7 +51,7 @@ const Technology = ({ handleClick }) => {
             <div
               className="technology-nav-item nav2"
               onClick={(e) => {
-                handleClick(items, 'selected-tech', e.target);
+                handleClick(items, "selected-tech", e.target);
                 setIndex(1);
                 setImageClass("spacePort");
               }}
@@ -61,7 +61,7 @@ const Technology = ({ handleClick }) => {
             <div
               className="technology-nav-item nav3"
               onClick={(e) => {
-                handleClick(items, 'selected-tech', e.target);
+                handleClick(items, "selected-tech", e.target);
                 setIndex(2);
                 setImageClass("spaceCapsule");
               }}

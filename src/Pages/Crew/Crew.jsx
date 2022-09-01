@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import handleNav from "../Navbar/handleNav";
+import { handleNav } from "../../Components";
 import data from "../../data.json";
 import "./crew.css";
 import { hurley, ansari, shuttleworth, glover } from "../../Assets/crew/index";
 
 const Crew = ({ handleClick }) => {
   const crew = data.crew;
+  console.log(JSON.stringify(data.crew));
 
   const items = document.getElementsByClassName("crew-nav-member");
 
@@ -15,10 +16,11 @@ const Crew = ({ handleClick }) => {
   useEffect(() => {
     handleNav(document.querySelector(".nav-crew"));
     handleClick(
-      items, 'selected-member', document.querySelector('.nav-hurley')
+      items,
+      "selected-member",
+      document.querySelector(".nav-hurley")
     );
   }, []);
-
 
   return (
     <div className="crew-main">
@@ -34,7 +36,7 @@ const Crew = ({ handleClick }) => {
             <div
               className="crew-nav-member nav-hurley"
               onClick={(e) => {
-                handleClick(items, 'selected-member', e.target);
+                handleClick(items, "selected-member", e.target);
                 setIndex(0);
                 setImage(hurley);
               }}
@@ -42,7 +44,7 @@ const Crew = ({ handleClick }) => {
             <div
               className="crew-nav-member nav-shuttleworth"
               onClick={(e) => {
-                handleClick(items, 'selected-member', e.target);
+                handleClick(items, "selected-member", e.target);
                 setIndex(1);
                 setImage(shuttleworth);
               }}
@@ -50,7 +52,7 @@ const Crew = ({ handleClick }) => {
             <div
               className="crew-nav-member nav-glover"
               onClick={(e) => {
-                handleClick(items, 'selected-member', e.target);
+                handleClick(items, "selected-member", e.target);
                 setIndex(2);
                 setImage(glover);
               }}
@@ -58,7 +60,7 @@ const Crew = ({ handleClick }) => {
             <div
               className="crew-nav-member nav-ansari"
               onClick={(e) => {
-                handleClick(items, 'selected-member', e.target);
+                handleClick(items, "selected-member", e.target);
                 setIndex(3);
                 setImage(ansari);
               }}

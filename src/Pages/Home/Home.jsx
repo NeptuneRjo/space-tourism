@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { handleNav } from "..";
+import { handleNav } from "../../Components";
 import "./home.css";
 
 const Home = () => {
