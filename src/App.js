@@ -1,14 +1,18 @@
 import "./App.css";
 import { Crew, Destination, Home, Technology, Notfound } from "./Pages";
 import { Navbar } from "./Components";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import data from "./data.json";
 
 function App() {
   const handleClick = (items, classToUse, selectedComponent) => {
-    console.log(items);
     for (let i = 0; i < items.length; i++) {
       items[i].classList.remove(classToUse);
-      console.log("removed", classToUse);
     }
 
     selectedComponent.classList.add(classToUse);
@@ -17,19 +21,25 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <Navbar />
+        <Navbar navItems={data?.navbar} />
         <div className="space__app-content">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route
               path="/destination"
               element={<Destination handleClick={handleClick} />}
             />
-            <Route path="/crew" element={<Crew handleClick={handleClick} />} />
+            <Route
+              path="/crew"
+              element={
+                <Crew crewMembers={data?.crew} handleClick={handleClick} />
+              }
+            />
             <Route
               path="/technology"
               element={<Technology handleClick={handleClick} />}
             />
+            <Route exact path="/" element={<Navigate replace to="/home" />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </div>

@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { handleNav } from "../../Components";
+import { handleNav, CrewMember } from "../../Components";
 import data from "../../data.json";
 import "./crew.css";
 import { hurley, ansari, shuttleworth, glover } from "../../Assets/crew/index";
 
-const Crew = ({ handleClick }) => {
-  const crew = data.crew;
-  console.log(JSON.stringify(data.crew));
-
+const Crew = ({ handleClick, crewMembers }) => {
   const items = document.getElementsByClassName("crew-nav-member");
 
   const [index, setIndex] = useState(0);
@@ -28,7 +25,7 @@ const Crew = ({ handleClick }) => {
         <p>02</p>MEET YOUR CREW
       </div>
       <div className="crew-container">
-        <div className="crew-image">
+        {/* <div className="crew-image">
           <img src={image} />
         </div>
         <div className="crew-content">
@@ -71,7 +68,7 @@ const Crew = ({ handleClick }) => {
             <h3 className="crew-name">{crew[index].name}</h3>
             <div className="crew-description">{crew[index].bio}</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
