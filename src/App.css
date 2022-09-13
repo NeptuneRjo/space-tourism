@@ -51,6 +51,12 @@
   line-height: 19px;
 }
 
+.heading-5 > span {
+  opacity: .25;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
 .subheading-1 {
   font-family: var(--font-main);
   color: var(--color-white);
