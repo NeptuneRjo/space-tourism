@@ -133,10 +133,11 @@
   width: 40px;
   border-radius: 100%;
   background-color: transparent;
-  border: solid 1px var(--color-white) .25;
+  border: solid 1px rgba(255, 255, 255, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .slider-2.active {
@@ -145,7 +146,7 @@
 }
 
 .slider-2:hover {
-  border: solid 1px var(--color-white) 1;
+  border: solid 1px #fff;
 }
 
 .tabs {
