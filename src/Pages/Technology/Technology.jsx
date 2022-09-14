@@ -8,8 +8,8 @@ const Technology = () => {
 
   return (
     <div className="technology-main">
-      <div className="technology-header">
-        <p>03</p>SPACE LAUNCH 101
+      <div className="technology heading-5">
+        <span>03</span>SPACE LAUNCH 101
       </div>
       <div className="container">
         <TechItem technologies={technology} />
