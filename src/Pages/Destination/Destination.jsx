@@ -8,10 +8,10 @@ const Destination = ({}) => {
 
   return (
     <div className="destination-main">
-      <div className="destination-header">
-        <p>01</p>PICK YOUR DESTINATION
+      <div className="destination heading-5">
+        <span>01</span>PICK YOUR DESTINATION
       </div>
-      <div className="destination-container">
+      <div className="container">
         <DestinationItem destinations={destinations} />
       </div>
     </div>
