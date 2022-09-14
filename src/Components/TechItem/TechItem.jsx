@@ -9,10 +9,12 @@ const TechItem = ({ technologies }) => {
     <div className="tech_item-main">
       <div className="tech_item-image">
         <img
+          className="tech_item-image-landscape"
           src={`${technology.images.landscape}`}
           alt={`Image of ${technology.name}`}
         />
         <img
+          className="tech_item-image-portrait"
           src={`${technology.images.portrait}`}
           alt={`Image of ${technology.name}`}
         />
