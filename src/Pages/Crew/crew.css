@@ -21,8 +21,7 @@
 @media screen and (min-width: 768px) {
 
   .crew-main {
-    background: url("/public/Assets/crew/background-crew-tablet.jpg") no-repeat
-    center center fixed;
+
     height: 100%;
     min-height: 100vh;
     padding-top: 8.5rem;
