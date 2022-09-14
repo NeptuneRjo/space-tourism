@@ -68,7 +68,7 @@
 
 .subheading-2 {
   font-family: var(--font-secondary);
-  color: var(--color-white);
+  color: var(--color-purple);
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -101,7 +101,7 @@
 
 .body-text {
   font-family: var(--font-secondary);
-  color: var(--color-white);
+  color: var(--color-purple);
   text-align: center;
   font-size: 15px;
   line-height: 25px;
@@ -148,6 +148,35 @@
   border: solid 1px var(--color-white) 1;
 }
 
+.tabs {
+  font-family: var(--font-secondary);
+  color: var(--color-purple);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.tabs.active {
+  color: var(--color-white);
+  border-bottom: solid 3px var(--color-white);
+}
+
+.tabs.active:hover {
+  color: var(--color-white);
+  border-bottom: solid 3px var(--color-white);
+}
+
+.tabs:hover { 
+  border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  margin: 2rem 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .heading-1 {
     font-size: 150px;
@@ -191,6 +220,11 @@
     width: 60px;
   }
 
+  .tabs {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
