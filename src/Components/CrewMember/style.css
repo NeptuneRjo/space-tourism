@@ -55,6 +55,8 @@
         border: none;
         align-items: flex-end;
         height: 100%;
+        /** The difference between .crew-container margin and 9.7rem **/
+        padding: 0 4.2rem;
     }
 
     .crew_member-image > img {
