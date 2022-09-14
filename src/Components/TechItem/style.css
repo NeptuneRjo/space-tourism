@@ -33,3 +33,11 @@
     margin-bottom: 26px;
     gap: 1rem;
 }
+
+.tech_item-title {
+    margin-bottom: 9px;
+}
+
+.tech_item-name {
+    margin-bottom: 1rem;
+}
