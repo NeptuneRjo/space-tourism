@@ -1,14 +1,18 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./notfound.css";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import './notfound.css'
 
 export default class Notfound extends Component {
-  render() {
-    return (
-      <div className="notfound-main">
-        <h1 className="notfound-header">Error! This page does not exist.</h1>
-        <Link to="/">Try this page instead...</Link>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className='not_found-main'>
+				<div className='not_found heading-3'>
+					Error! This page does not exist.
+				</div>
+				<Link className='not_found subheading-2' to='/'>
+					Try this page instead...
+				</Link>
+			</div>
+		)
+	}
 }
