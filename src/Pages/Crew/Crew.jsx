@@ -11,7 +11,7 @@ const Crew = () => {
       <div className="crew heading-5">
         <span>02</span>MEET YOUR CREW
       </div>
-      <div className="crew-container">
+      <div className="container">
         <CrewMember crew={crew} />
       </div>
     </div>
