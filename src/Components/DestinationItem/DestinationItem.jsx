@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 
 const DestinationItem = ({ destinations }) => {
   const [destinationIndex, setDestinationIndex] = useState(0);
@@ -16,7 +17,7 @@ const DestinationItem = ({ destinations }) => {
         <div className="destination_item-tabs">
           {destinations.map((item, index) => (
             <div
-              className={`tabs ${destinationIndex === index} ? "active" : ""`}
+              className={`tabs ${destinationIndex === index ? "active" : ""}`}
               onClick={() => setDestinationIndex(index)}
             >
               {item.name.toUpperCase()}
@@ -24,13 +25,13 @@ const DestinationItem = ({ destinations }) => {
           ))}
         </div>
         <div className="destination_item-body">
-          <div className="destination_item-name heading-1">
+          <div className="destination_item-name heading-2">
             {destination.name.toUpperCase()}
           </div>
           <div className="destination_item-bio body-text">
             {destination.description}
           </div>
-          <div className="destination_item-stats">
+          <div className="destination_item-stats-container">
             <div className="destination_item-stats">
               <div className="subheading-2">AVG. DISTANCE</div>
               <div className="subheading-1">
