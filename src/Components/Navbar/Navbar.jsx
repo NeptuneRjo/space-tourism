@@ -1,112 +1,59 @@
-import React, { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import "./navbar.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import './navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ navItems }) => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+	const [toggleMenu, setToggleMenu] = useState(false)
+	const [navIndex, setNavIndex] = useState(0)
 
-  return (
-    <div className="navbar">
-      <div className="navbar-desktop">
-        {navItems.map((item) => (
-          <div className="navbar-item">
-            <Link to={`/${item.txt}`}>
-              <span>{item.num}</span>
-              {item.txt}
-            </Link>
-          </div>
-        ))}
-      </div>
-      <div className="navbar-mobile">
-        {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
-        ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(true)}
-          />
-        )}
-        {toggleMenu &&
-          navItems.map((item) => (
-            <div className="navbar-item">
-              <Link to="/">
-                <span>{item.num}</span>
-                {item.txt.toUpperCase()}
-              </Link>
-            </div>
-          ))}
-      </div>
-    </div>
-    // <div className="space__navbar">
-    //   <div className="space__navbar-content">
-    //     <div className="space__navbar-nav nav-home">
-    //       <Link to="/">
-    //         <p>00</p>Home
-    //       </Link>
-    //     </div>
-    //     <div className="space__navbar-nav nav-destination">
-    //       <Link to="/destination">
-    //         <p>01</p>Destination
-    //       </Link>
-    //     </div>
-    //     <div className="space__navbar-nav nav-crew">
-    //       <Link to="/crew">
-    //         <p>02</p>Crew
-    //       </Link>
-    //     </div>
-    //     <div className="space__navbar-nav nav-technology">
-    //       <Link to="/technology">
-    //         <p>03</p>Technology
-    //       </Link>
-    //     </div>
-    //   </div>
-    //   <div className="space__navbar-content-menu">
-    // {toggleMenu ? (
-    //   <RiCloseLine
-    //     color="#fff"
-    //     size={27}
-    //     onClick={() => setToggleMenu(false)}
-    //   />
-    // ) : (
-    //   <RiMenu3Line
-    //     color="#fff"
-    //     size={27}
-    //     onClick={() => setToggleMenu(true)}
-    //   />
-    // )}
-    //     {toggleMenu && (
-    //       <div className="space__navbar-content-menu slide-out">
-    //         <div className="space__navbar-nav nav-home">
-    //           <Link to="/">
-    //             <p>00</p>Home
-    //           </Link>
-    //         </div>
-    //         <div className="space__navbar-nav nav-destination">
-    //           <Link to="/destination">
-    //             <p>01</p>Destination
-    //           </Link>
-    //         </div>
-    //         <div className="space__navbar-nav nav-crew">
-    //           <Link to="/crew">
-    //             <p>02</p>Crew
-    //           </Link>
-    //         </div>
-    //         <div className="space__navbar-nav nav-technology">
-    //           <Link to="/technology">
-    //             <p>03</p>Technology
-    //           </Link>
-    //         </div>
-    //       </div>
-    //     )}
-    //   </div>
-    // </div>
-  );
-};
+	const links = ['home', 'destination', 'crew', 'technology']
 
-export default Navbar;
+	return (
+		<div className='navbar-main'>
+			<div className='navbar-desktop'>
+				{links.map((item, index) => (
+					<div className='navbar-item'>
+						<Link to={`/${item}`}>
+							<span>{`0${index}`}</span>
+							{item.toUpperCase()}
+						</Link>
+					</div>
+				))}
+			</div>
+			<div className='navbar-mobile'>
+				{toggleMenu ? (
+					<RiCloseLine
+						color='#d0d6f9'
+						size={27}
+						onClick={() => setToggleMenu(false)}
+					/>
+				) : (
+					<RiMenu3Line
+						color='#d0d6f9'
+						size={27}
+						onClick={() => setToggleMenu(true)}
+					/>
+				)}
+				{toggleMenu && (
+					<div className='navbar-mobile-content'>
+						{links.map((item, index) => (
+							<div className='navbar-item'>
+								<Link
+									className={`nav-text ${navIndex === index ? 'active' : ''}`}
+									to={`/${item}`}
+									onClick={() => setNavIndex(index)}
+								>
+									<span>{`0${index}`}</span>
+									{item.toUpperCase()}
+								</Link>
+							</div>
+						))}
+					</div>
+				)}
+			</div>
+		</div>
+	)
+}
+
+export default Navbar
