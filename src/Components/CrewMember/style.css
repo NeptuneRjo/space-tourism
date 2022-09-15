@@ -35,7 +35,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     .crew_member-main {
         flex-direction: column-reverse;
         height: 100%;
