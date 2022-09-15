@@ -15,6 +15,7 @@ const Navbar = ({ navItems }) => {
 				{links.map((item, index) => (
 					<div className={`nav-text ${navIndex === index ? 'active' : ''}`}>
 						<Link to={`/${item}`} onClick={() => setNavIndex(index)}>
+							<span>0{index}</span>
 							{item.toUpperCase()}{' '}
 						</Link>
 					</div>

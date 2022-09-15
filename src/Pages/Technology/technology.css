@@ -18,6 +18,8 @@
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .technology-main {
+    background: url("/public/Assets/technology/background-technology-tablet.jpg")
+    no-repeat center center fixed;
     padding-top: 8.5rem;
   }
 }
