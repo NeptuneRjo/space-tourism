@@ -14,3 +14,19 @@
   flex-direction: column;
   padding-top: 5.5rem;
 }
+
+.destination-container {
+  margin: 2rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .destination-main {
+    padding-top: 8.5rem;
+    background: url("/public/Assets/destination/background-destination-tablet.jpg")
+    no-repeat center center fixed;
+  }
+
+  .destination-container {
+    margin: 3.75rem 6.3rem;
+  }
+}

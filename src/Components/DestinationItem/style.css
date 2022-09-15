@@ -44,3 +44,32 @@
     flex-direction: column;
     gap: 12px;
 }
+
+@media screen and (min-width: 768px) {
+    .destination_item-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .destination_item-tabs {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .destination_item-bio {
+        margin-bottom: 3rem;
+        min-height: 84px;
+    }
+
+    .destination_item-stats-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+
+    .destination_item-stats {
+        width: 212px;
+    }
+
+}
