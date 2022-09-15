@@ -47,3 +47,34 @@
   box-shadow: 0px 0px 0px 40px rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .space-main {
+    background: url("/public/Assets/home/background-home-tablet.jpg") no-repeat
+    center center fixed;
+    padding-top: 12.6rem;
+  }
+
+  .space-heading-5 {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .space-heading-1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .space-content {
+    margin: 9.75rem;
+    margin-top: 0;
+  }
+
+  .space-container {
+    margin: 0;
+  }
+
+  .space-explore-button {
+    height: 242px;
+    width: 242px;
+  }
+}
