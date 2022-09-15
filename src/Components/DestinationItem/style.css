@@ -45,7 +45,7 @@
     gap: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .destination_item-image {
         height: 300px;
         width: 300px;

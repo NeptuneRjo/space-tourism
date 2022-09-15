@@ -19,7 +19,7 @@
   margin: 2rem 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .destination-main {
     padding-top: 8.5rem;
     background: url("/public/Assets/destination/background-destination-tablet.jpg")
