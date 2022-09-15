@@ -23,3 +23,22 @@
     padding-top: 8.5rem;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .technology-main {
+    background: url("/public/Assets/technology/background-technology-desktop.jpg")
+    no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 13.25rem;
+  }
+
+  .technology-container {
+    padding-left: 10.3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .technology-container {
+    padding: 0 10.3rem;
+  }
+}

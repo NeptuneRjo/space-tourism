@@ -35,7 +35,7 @@ const TechItem = ({ technologies }) => {
 					<div className='tech_item-name heading-3'>
 						{technology.name.toUpperCase()}
 					</div>
-					<div className='tech_item-body body-text'>
+					<div className='tech_item-description body-text'>
 						{technology.description}
 					</div>
 				</div>

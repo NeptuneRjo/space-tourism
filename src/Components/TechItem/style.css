@@ -57,3 +57,55 @@
         margin-bottom: 1rem;
     }
 }
+
+@media screen and (min-width: 769px) {
+    .tech_item-main {
+        flex-direction: row-reverse;
+    }
+
+    .tech_item-content {
+        flex-direction: row;
+        margin-right: 8.1rem;
+    }
+
+    .tech_item-image-landscape {
+        display: none;
+    }
+
+    .tech_item-image-portrait {
+        display: block;
+    }
+
+    .tech_item-slider {
+        flex-direction: column;
+      }
+
+      .tech_item-body {
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+      }
+
+      .tech_item-title {
+        width: 100%;
+        text-align: left;
+
+      }
+
+      .tech_item-name {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      .tech_item-description {
+        text-align: left;
+      }
+}
+
+@media screen and (min-width: 1440px) {
+
+}
