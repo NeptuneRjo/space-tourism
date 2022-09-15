@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({ navItems }) => {
 	const [toggleMenu, setToggleMenu] = useState(false)
-	const [navIndex, setNavIndex] = useState(0)
+	const [navIndex, setNavIndex] = useState(undefined)
 
 	const links = ['home', 'destination', 'crew', 'technology']
 
@@ -13,10 +13,9 @@ const Navbar = ({ navItems }) => {
 		<div className='navbar-main'>
 			<div className='navbar-desktop'>
 				{links.map((item, index) => (
-					<div className='navbar-item'>
-						<Link to={`/${item}`}>
-							<span>{`0${index}`}</span>
-							{item.toUpperCase()}
+					<div className={`nav-text ${navIndex === index ? 'active' : ''}`}>
+						<Link to={`/${item}`} onClick={() => setNavIndex(index)}>
+							{item.toUpperCase()}{' '}
 						</Link>
 					</div>
 				))}

@@ -62,3 +62,35 @@
             transform: translateX(0);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    height: 96px;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px transparent
+  }
+
+  .nav-text > a { 
+    text-decoration: none;
+    color: var(--color-white);
+  }
+}
