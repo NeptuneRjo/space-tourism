@@ -8,7 +8,7 @@ const Technology = () => {
 
 	return (
 		<div className='technology-main'>
-			<div className='technology heading-5'>
+			<div className='technology-title heading-5'>
 				<span>03</span>SPACE LAUNCH 101
 			</div>
 			<div className='technology-container'>

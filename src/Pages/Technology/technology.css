@@ -13,32 +13,45 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: 5.5rem;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+.technology-title {
+  margin-top: 88px;
+  margin-bottom: 32px;
+}
+
+
+@media screen and (min-width: 375px) {
   .technology-main {
     background: url("/public/Assets/technology/background-technology-tablet.jpg")
     no-repeat center center fixed;
-    padding-top: 8.5rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .technology-title {
+    text-align: left;
+    margin: 136px 0 60px 38px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .technology-main {
     background: url("/public/Assets/technology/background-technology-desktop.jpg")
     no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    padding-top: 13.25rem;
-  }
-
-  .technology-container {
-    padding-left: 10.3rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .technology-container {
-    padding: 0 10.3rem;
+@media screen and (min-width: 1080px) {
+
+  .technology-title {
+    text-align: left;
+    margin: 212px 0 5% 8%;
   }
 }
