@@ -8,7 +8,7 @@ const Crew = () => {
 
 	return (
 		<div className='crew-main'>
-			<div className='crew heading-5'>
+			<div className='crew-title heading-5'>
 				<span>02</span>MEET YOUR CREW
 			</div>
 			<div className='crew-container'>
