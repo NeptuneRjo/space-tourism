@@ -6,8 +6,9 @@
 }
 
 .destination_item-image {
-    height: 170px;
-    width: 170px;
+    max-height: 170px;
+    max-width: 170px;
+    margin-bottom: 26px;
 }
 
 .destination_item-image > img {
@@ -15,8 +16,11 @@
     width: 100%;
 }
 
+.destination_item-content {
+    margin: 0 24px;
+}
+
 .destination_item-tabs {
-    margin-top: 26px;
     margin-bottom: 31px; 
     display: flex;
     justify-content: center;
@@ -29,14 +33,18 @@
     align-items: center;
 }
 
+.destination_item-name {
+    margin-bottom: 16px;
+}
+
 .destination_item-stats-container {
     display: flex;
     border-top: solid 1px #383B4B;
     width: 100%;
     flex-direction: column;
-    margin-top: 1.5rem;
-    gap: 2rem;
-    padding-top: 2rem;
+    margin-top: 24px;
+    gap: 32px;
+    padding-top: 32px;
 }
 
 .destination_item-stats {
@@ -45,7 +53,87 @@
     gap: 12px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 375px) {
+    .destination_item-main{
+        margin-bottom: 15%;
+    }
+
+    .destination_item-image {
+        max-width: 300px;
+        max-height: 300px;
+        margin-bottom: 53px;
+    }
+
+    .destination_item-content {
+        margin: 0 12%;
+    }
+
+    .destination_item-stats-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15%;
+    }
+
+    .destination_item-stats > .subheading-2 {
+        min-width: 121px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .destination_item-main {
+        flex-direction: row;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+        gap: 15%;
+        margin-bottom: 48px;
+    }
+
+    .destination_item-image {
+        max-height: 445px;
+        max-width: 445px;
+        margin: 0;
+    }
+
+    .destination_item-content {
+        margin: 0;
+        max-width: 445px;
+    }
+
+    .destination_item-tabs {
+        justify-content: flex-start;
+        margin-bottom: 37px;
+        gap: 35px;
+    }
+
+    .destination_item-name, .destination_item-bio {
+        text-align: left;
+        width: 100%;
+    }
+
+    .destination_item-name {
+        margin-bottom: 14px;
+    }
+
+    .destination_item-bio {
+        margin-bottom: 54px;
+        min-height: 130px;
+
+    }
+
+    .destination_item-stats-container {
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .destination_item-stats {
+        min-width: 155px;
+    }
+}
+
+
+/* @media screen and (min-width: 600px) and (max-width: 768px) {
     .destination_item-image {
         height: 300px;
         width: 300px;
@@ -72,4 +160,4 @@
         width: 212px;
     }
 
-}
+} */

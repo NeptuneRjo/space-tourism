@@ -12,14 +12,48 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: 5.5rem;
 }
 
-.destination-container {
-  margin: 2rem 1.5rem;
+.destination-title {
+  margin-top: 88px;
+  margin-bottom: 32px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 375px) {
+  .destination-main {
+    background: url("/public/Assets/destination/background-destination-tablet.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .destination-title {
+    text-align: left;
+    margin: 136px 0 60px 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destination-main {
+    background: url("/public/Assets/destination/background-destination-desktop.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .destination-title {
+    text-align: left;
+    margin: 212px 0 5% 8%;
+  }
+}
+
+/* @media screen and (min-width: 600px) and (max-width: 768px) {
   .destination-main {
     padding-top: 8.5rem;
     background: url("/public/Assets/destination/background-destination-tablet.jpg")
@@ -29,4 +63,4 @@
   .destination-container {
     margin: 3.75rem 6.3rem;
   }
-}
+} */

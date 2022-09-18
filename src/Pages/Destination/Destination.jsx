@@ -8,7 +8,7 @@ const Destination = ({}) => {
 
 	return (
 		<div className='destination-main'>
-			<div className='destination heading-5'>
+			<div className='destination-title heading-5'>
 				<span>01</span>PICK YOUR DESTINATION
 			</div>
 			<div className='destination-container'>
