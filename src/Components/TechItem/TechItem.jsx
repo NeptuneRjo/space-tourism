@@ -25,6 +25,7 @@ const TechItem = ({ technologies }) => {
 						<div
 							className={`slider-2 ${techIndex === index ? 'active' : ''}`}
 							onClick={() => setTechIndex(index)}
+							key={index}
 						>
 							{index + 1}
 						</div>
