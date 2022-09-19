@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { handleNav, CrewMember } from '../../Components'
+import React from 'react'
+import { CrewMember } from '../../Components'
 import data from '../../data.json'
 import './crew.css'
 

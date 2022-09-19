@@ -3,7 +3,7 @@ import data from '../../data.json'
 import './destination.css'
 import { DestinationItem } from '../../Components'
 
-const Destination = ({}) => {
+const Destination = () => {
 	const { destinations } = data
 
 	return (

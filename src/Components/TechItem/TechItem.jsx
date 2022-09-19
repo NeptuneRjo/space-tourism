@@ -11,12 +11,12 @@ const TechItem = ({ technologies }) => {
 				<img
 					className='tech_item-image-landscape'
 					src={`${technology.images.landscape}`}
-					alt={`Image of ${technology.name}`}
+					alt={`${technology.name}`}
 				/>
 				<img
 					className='tech_item-image-portrait'
 					src={`${technology.images.portrait}`}
-					alt={`Image of ${technology.name}`}
+					alt={`${technology.name}`}
 				/>
 			</div>
 			<div className='tech_item-content'>
