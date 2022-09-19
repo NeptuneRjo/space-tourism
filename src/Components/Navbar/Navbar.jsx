@@ -12,29 +12,28 @@ const Navbar = () => {
 
 	const { pathname } = useLocation()
 
+	// Updates the nav whenever a route is accessed outside of the navbar
 	useEffect(() => {
-		if (navIndex === undefined) {
-			switch (pathname) {
-				case '/home':
-					setNavIndex(0)
-					break
-				case '/destination':
-					setNavIndex(1)
-					break
-				case '/crew':
-					setNavIndex(2)
-					break
-				case '/technology':
-					setNavIndex(3)
-					break
-				case '/':
-					setNavIndex(0)
-					break
-				default:
-					setNavIndex(undefined)
-			}
+		switch (pathname) {
+			case '/home':
+				setNavIndex(0)
+				break
+			case '/destination':
+				setNavIndex(1)
+				break
+			case '/crew':
+				setNavIndex(2)
+				break
+			case '/technology':
+				setNavIndex(3)
+				break
+			case '/':
+				setNavIndex(0)
+				break
+			default:
+				setNavIndex(undefined)
 		}
-	}, [navIndex])
+	}, [pathname])
 
 	return (
 		<div className='navbar-main'>

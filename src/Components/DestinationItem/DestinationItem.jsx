@@ -16,6 +16,7 @@ const DestinationItem = ({ destinations }) => {
 						<div
 							className={`tabs ${destinationIndex === index ? 'active' : ''}`}
 							onClick={() => setDestinationIndex(index)}
+							key={index}
 						>
 							{item.name.toUpperCase()}
 						</div>

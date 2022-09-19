@@ -16,6 +16,7 @@ const CrewMember = ({ crew }) => {
 						<div
 							className={`slider-1 ${crewIndex === index ? 'active' : ''}`}
 							onClick={() => setCrewIndex(index)}
+							key={index}
 						/>
 					))}
 				</div>
