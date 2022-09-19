@@ -1,52 +1,28 @@
-## Project Title
+## Space Tourism (Frontend)
 
-Space Tourism Website
+Space tourism is a web application built for a challenge on Frontendmentor.io using React, Javascript, and CSS.
 
-## Demo Link:
+Visit Space Tourism [Here](https://neptunerjo.github.io/space-tourism/)
 
-Access my site at [Demo Link](https://neptunerjo.github.io/space-tourism/)
+![Walkthrough Gif](walkthrough.gif)
 
-## Table of Content: 
+## Installation and setup
 
-- [About The App](#about-the-app)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Approach](#approach)
+- Clone or download this reprository. You will need `node` and `npm` installed globally on your machine.
+- Run `npm install` to install the dependencies.
+- Run `npm start` to start an instance on `localhost:3000`
 
-## About the App
+## Reflection
 
-The Space Tourism Website is a responsive informational website built with React. 
+This was a project built as a challenge listend on [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
+Project goals included familiarizing technologies learned up untill this point such as React and its various tools.
 
-This project is mainly for experimenting with different techniques and developing my React skills...
-I gained a lot of experience with React, particularly with the in-page content navigation. 
-Functional Components and `useState` make dynamic content very easy.
+Originally this project was built at the beginning of my React journey, but recently I took on the challenge of refactoring my 7+ month old code
+to improve the React functionality and the CSS.
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+The main challenge of this project was creating a fluid mobile-first responsive design. Creating a design system helped drastically with minimizing the amount of
+repeating CSS and drastically took the load off of creating responsiveness; and allowed for the quick application of classes to components.
+I was able to create a (somewhat) decent transition between breakpoint by using `min()` and percentages instead of pixels for measurements.
 
-
-## Screenshots
-
-![Desktop Home Page](screenshots/screenshot-home.png)
-![Desktop Destinations Page](screenshots/screenshot-destination.png)
-
-
-## Technologies
-
-Built using `html`, `css`, `React`, `Figma`, and `Prettier`.
-
-
-## Setup
-
-- Download or clone the repository
-- Run `npm install`
-- Run `npm start` to view a local version on `http://localhost:3000/`
-
-## Approach
-
-- The home page roughly uses `BEM` naming conventions for class names, but everything else uses standard css conventions.
-- I used `useState` to render dynamic content on multiple pages, creating both an index for JSON data and a convention for applying classes. 
-- `useEffect` also came in handy for applying styles to the navbar on each page's render.
-
-
-
+At the end of the day, the technologies used in this project are `React`, `React-Router`, and a large amount of CSS. I chose to use `create-react-app`
+boilerplate to minimize initial setup time.
