@@ -8,11 +8,29 @@
   -o-background-size: cover;
   background-size: cover;
 
-  color: white;
-  font-family: var(--font-main);
-
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+@media screen and (min-width: 375px) {
+  .not_found-main {
+    background: url("/public/Assets/home/background-home-tablet.jpg") no-repeat
+    center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .not_found-main {
+    background: url("/public/Assets/home/background-home-desktop.jpg") no-repeat
+    center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
