@@ -251,6 +251,18 @@
 
 }
 
+@media screen and (min-width: 1080px) {
+  .nav-text > a {
+    display: flex;
+    gap: min(5%, 11px);
+  }
+
+  .nav-text > a > span {
+    display: block;
+    font-weight: 700;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .heading-1 {
     line-height: 172px;

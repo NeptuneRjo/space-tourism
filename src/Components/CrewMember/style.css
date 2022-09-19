@@ -13,6 +13,8 @@
     justify-content: center;
     align-items: flex-end;
     height: 256px;
+
+
 }
 
 .crew_member-image > img {
@@ -37,7 +39,7 @@
 @media screen and (min-width: 375px) {
     .crew_member-main {
         flex-direction: column-reverse;
-        padding: 0 15%;
+        padding: 0 min(22%, 155px);
         flex-grow: 1;
         justify-content: flex-end;
     }
@@ -50,7 +52,7 @@
     .crew_member-image > img {
         width: auto;
         max-height: 532px;
-        max-width: fit-content;
+        max-width: 90vw;
         height: 100%;
     }
 
