@@ -120,6 +120,7 @@
   border-radius: 100%;
   background-color: var(--color-white);
   opacity: .15;
+  cursor: pointer;
 }
 
 .slider-1.active {

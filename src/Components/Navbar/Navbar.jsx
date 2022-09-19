@@ -27,11 +27,14 @@ const Navbar = () => {
 				case '/technology':
 					setNavIndex(3)
 					break
+				case '/':
+					setNavIndex(0)
+					break
 				default:
 					setNavIndex(undefined)
 			}
 		}
-	}, [])
+	}, [navIndex])
 
 	return (
 		<div className='navbar-main'>
