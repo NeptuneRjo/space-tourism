@@ -102,6 +102,11 @@
 
     .tech_item-content {
         align-items: flex-start;
+        margin: 0 8%;
+    }
+
+    .tech_item-slider {
+        gap: 32px;
     }
 
     .tech_item-body {
@@ -113,14 +118,17 @@
     }
 
     .tech_item-name {
-        margin-bottom: 17px;
+        margin-bottom: 21px;
+    }
+
+    .tech_item-description {
+        max-width: 445px;
     }
 }
 
 @media screen and (min-width: 1920px) {
     .tech_item-main {
-        margin: 0;
-        justify-content: center;
+        margin: 0 8%;
         gap: 15%;
     }
 

@@ -131,11 +131,14 @@
 
     .crew_member-image {
         justify-content: flex-end;
+        max-height: 682px;
     }
 
     .crew_member-image > img {
         max-height: 100%;
         max-width: 100%;
+        object-fit: cover; 
+        object-position: 0 100%;
     }
 
     .crew_member-bio {
